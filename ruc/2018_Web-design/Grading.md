@@ -34,7 +34,7 @@
 
 - **模范作业**：
 	- 4人次 `100分`
-	- 见[第5周上机作业-网页设计04班](https://github.com/taoyouxian/TA_life/tree/master/ruc/2018_Web设计/第5周上机作业-网页设计04班)
+	- 见[第5周上机作业-网页设计04班](https://github.com/taoyouxian/TA_life/blob/master/ruc/2018_Web-design/第5周上机作业-网页设计04班)
 
 
 ## 第6周上机作业
@@ -71,7 +71,7 @@
 
 - **模范作业**：
 	- 3人次 `99分`
-	- 见[第6周上机作业-网页设计04班](https://github.com/taoyouxian/TA_life/tree/master/ruc/2018_Web设计/第6周上机作业-网页设计04班)
+	- 见[第6周上机作业-网页设计04班](https://github.com/taoyouxian/TA_life/blob/master/ruc/2018_Web-design/第6周上机作业-网页设计04班)
 
 
 ## 第7周上机作业
