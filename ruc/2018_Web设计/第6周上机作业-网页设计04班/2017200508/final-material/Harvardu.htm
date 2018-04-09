@@ -1,0 +1,938 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0024)https://www.harvard.edu/ -->
+<!DOCTYPE html PUBLIC "" ""><!--[if IE 8]><html class="no-js ie-8"> <![endif]--><!--[if gt IE 8]><!--><HTML 
+class="2no-js no-jss" lang="en" dir="ltr" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:sioct="http://rdfs.org/sioc/types#" 
+xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:og="http://ogp.me/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/terms/" 
+xmlns:content="http://purl.org/rss/1.0/modules/content/"><!--<![endif]--><HEAD 
+itemtype="http://schema.org/WebSite" itemscope=""><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<SCRIPT type="text/javascript">var _sf_startpt=(new Date()).getTime()</SCRIPT>
+ 
+<SCRIPT>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TK7H6Z');</SCRIPT>
+ 
+<META charset="utf-8">
+<SCRIPT type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</SCRIPT>
+ 
+<META name="HandheldFriendly" content="True"> 
+<META name="MobileOptimized" content="320"> 
+<META name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> 
+<LINK href="https://www.harvard.edu" rel="canonical" itemprop="url"> <LINK href="/sites/all/themes/hedu2015/assets/img/favicon.ico" 
+rel="shortcut icon" type="image/ico"> 
+<META name="apple-mobile-web-app-capable" content="yes"> <LINK href="/sites/all/themes/hedu2015/assets/img/apple-touch-icon-144x144.png" 
+rel="apple-touch-icon-precomposed"> 
+<META name="msapplication-TileImage" content="/sites/all/themes/hedu2015/assets/img/apple-touch-icon-144x144.png"> 
+<META name="msapplication-TileColor" content="#222222"> <TITLE 
+itemprop="name">Harvard University</TITLE> 
+<META name="robots" content="index,follow,NOODP"> 
+<META name="description" content="Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. Harvard University is made up of 11 principal academic units."> 
+<META name="keywords" content="Harvard University, College, Education, Innovation, Teaching, Learning"> 
+<META name="node_id" content="60293"> 
+<META content="593072576,599799799,662979311,613602264" property="fb:admins"> 
+<META content="105930651606" property="fb:page_id"> 
+<META content="135898969862440" property="fb:app_id"> 
+<META content="1491443782" property="twitter:account_id"> 
+<META name="twitter:site" content="@harvard"> 
+<META name="twitter:creator" content="@harvard"> 
+<META name="twitter:card" content="summary_large_image"> 
+<META content="Harvard University" property="og:site_name"> 
+<META content="university" property="og:type"> 
+<META content="Harvard University" property="og:title"> 
+<META content="http://www.harvard.edu/" property="og:url"> 
+<META content="Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders in many disciplines who make a difference globally. Harvard University is made up of 11 principal academic units." 
+property="og:description"> 
+<META content="https://www.harvard.edu/sites/default/files/default_images/harvard-social1200.jpg" 
+property="og:image"> <LINK href="Harvardu_files/harvard.min.css" rel="stylesheet"> 
+<LINK href="Harvardu_files/print.css" rel="stylesheet" type="text/css" media="print"> 
+<SCRIPT async="true">
+      var fontCSS = '/sites/all/themes/hedu2015/assets/css/fonts.min.css';
+
+      (function() {
+        var wf = document.createElement('link');
+        wf.href = fontCSS;
+        wf.rel = 'stylesheet';
+
+        var s = document.getElementsByTagName('link')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </SCRIPT>
+ <NOSCRIPT>      &lt;link 
+href="/sites/all/themes/hedu2015/assets/css/fonts.min.css" rel="stylesheet"&gt;  
+   </NOSCRIPT> <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <link href="/sites/all/themes/hedu2015/assets/css/ie.min.css" rel="stylesheet">
+    <![endif]--> 
+<SCRIPT type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "Harvard",
+  "alternateName": "Harvard University",
+  "url": "http://www.harvard.edu",
+  "logo": "http://www.harvard.edu/sites/default/files/content/harvard-university-logo-151.png",
+  "sameAs": [
+		"https://www.facebook.com/Harvard",
+		"https://twitter.com/harvard",
+		"https://www.instagram.com/harvard/",
+		"https://www.youtube.com/harvard",
+		"https://soundcloud.com/harvard",
+		"https://www.linkedin.com/edu/school?id=18483"
+  ]
+}
+</SCRIPT>
+ 
+<SCRIPT type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.harvard.edu",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.harvard.edu/searches?searchtext={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY class="homepage" id="body"><NOSCRIPT>&lt;iframe 
+src="https://www.googletagmanager.com/ns.html?id=GTM-TK7H6Z"                    
+height="0" width="0" 
+style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</NOSCRIPT> 
+<DIV class="page" id="page">
+<UL class="jump-links">
+  <LI><A id="jumpToMain" href="https://www.harvard.edu/#mainArea">Jump to main 
+  content </A> </LI>
+  <LI><A id="jumpToSearch" href="https://www.harvard.edu/#searchArea">Jump to 
+  search </A> </LI>
+  <LI><A href="https://www.harvard.edu/#footerArea">Jump to the footer </A> 
+</LI></UL><HEADER class="header-base " id="headerArea" role="banner">
+<H1 class="harvard-heading"><A class="harvard-heading__link" href="https://www.harvard.edu/"><SPAN 
+class="is-visually-hidden">Harvard University </SPAN> </A></H1><A class="btn--menu" 
+id="btn_menu" aria-label="Reveal Navigation" href="https://www.harvard.edu/#siteNavigation" 
+data-state="off" data-id="nav"><SPAN class="btn--menu__icon"></SPAN> Menu </A> 
+<NAV class="main-nav" id="siteNavigation" role="navigation">
+<DIV class="nav-drawer">
+<DIV class="nav-group nav-group--consistent">
+<UL class="clearfix">
+  <LI class="nav-left-half">
+  <UL class="clearfix" role="presentation">
+    <LI class="has-drop-nav"><A href="https://www.harvard.edu/about-harvard">
+    About <SPAN class="lg-nav-txt">Harvard </SPAN> </A>
+    <UL class="list--drop-nav">
+      <LI class="first"><A class="first" href="https://www.harvard.edu/about-harvard/harvard-glance">Harvard 
+      at a Glance</A></LI>
+      <LI><A href="https://www.harvard.edu/president">Harvard's 
+      President</A></LI>
+      <LI><A href="https://www.harvard.edu/about-harvard/harvards-president-leadership">Harvard's 
+      Leadership</A></LI>
+      <LI><A 
+      href="https://www.harvard.edu/about-harvard/academic-experience">Academic 
+      Experience</A></LI>
+      <LI><A 
+      href="https://www.harvard.edu/about-harvard/administrative-offices">Administrative 
+      Offices</A></LI>
+      <LI><A 
+      href="https://www.harvard.edu/about-harvard/directories">Directories</A></LI>
+      <LI><A href="http://community.harvard.edu/">Harvard in the 
+      Community</A></LI>
+      <LI><A href="http://news.harvard.edu/gazette/">News</A></LI></UL></LI>
+    <LI class="has-drop-nav"><A href="https://www.harvard.edu/admissions-aid">
+    Admissions <SPAN class="lg-nav-txt">&amp; Aid </SPAN> </A>
+    <UL class="list--drop-nav">
+      <LI class="first"><A class="first" href="https://www.harvard.edu/admissions-aid#titletop">Undergraduate</A></LI>
+      <LI><A href="https://www.harvard.edu/admissions-aid#grad">Graduate &amp; 
+      Professional Schools</A></LI>
+      <LI><A href="https://www.harvard.edu/admissions-aid#continue">Continuing 
+      Education</A></LI>
+      <LI class="last"><A class="last" href="https://www.harvard.edu/admissions-aid#summer">Summer 
+      Programs</A></LI></UL></LI></UL></LI>
+  <LI class="nav-right-half">
+  <UL class="clearfix" role="presentation">
+    <LI class="has-drop-nav"><A href="https://www.harvard.edu/schools">Schools 
+    </A>
+    <UL class="list--drop-nav">
+      <LI class="first"><A class="first" 
+      href="http://www.hbs.edu/">Business</A></LI>
+      <LI><A href="http://college.harvard.edu/">College</A></LI>
+      <LI><A href="http://www.dce.harvard.edu/">Continuing Education</A></LI>
+      <LI><A href="http://www.hsdm.harvard.edu/">Dental</A></LI>
+      <LI><A href="http://www.gsd.harvard.edu/">Design</A></LI>
+      <LI><A href="http://www.hds.harvard.edu/">Divinity</A></LI>
+      <LI><A href="http://www.gse.harvard.edu/">Education</A></LI>
+      <LI><A href="http://seas.harvard.edu/">Engineering</A></LI>
+      <LI><A href="http://www.fas.harvard.edu/">Faculty of Arts &amp; 
+      Sciences</A></LI>
+      <LI><A href="http://www.hks.harvard.edu/">Government</A></LI>
+      <LI><A href="http://www.gsas.harvard.edu/">Graduate School</A></LI>
+      <LI><A href="http://www.law.harvard.edu/index.html">Law</A></LI>
+      <LI><A href="http://hms.harvard.edu/">Medical</A></LI>
+      <LI><A href="http://www.hsph.harvard.edu/">Public Health</A></LI>
+      <LI class="last"><A class="last" 
+      href="http://www.radcliffe.edu/">Radcliffe Institute</A></LI></UL></LI>
+    <LI class="has-drop-nav"><A href="https://www.harvard.edu/on-campus">On 
+    Campus </A>
+    <UL class="list--drop-nav">
+      <LI class="first"><A class="first" href="https://www.harvard.edu/on-campus/arts-and-humanities">Arts 
+      and Humanities</A></LI>
+      <LI><A href="http://www.gocrimson.com/">Athletics</A></LI>
+      <LI><A 
+      href="https://www.harvard.edu/on-campus/commencement">Commencement</A></LI>
+      <LI><A href="http://hr.harvard.edu/jobs/">Employment</A></LI>
+      <LI><A href="https://www.harvard.edu/events">Events</A></LI>
+      <LI><A href="http://harvardx.harvard.edu/">HarvardX</A></LI>
+      <LI><A href="http://library.harvard.edu/">Library</A></LI>
+      <LI><A href="https://www.harvard.edu/on-campus/museums">Museums</A></LI>
+      <LI><A href="https://www.harvard.edu/on-campus/research">Research</A></LI>
+      <LI class="last"><A class="last" href="https://www.harvard.edu/on-campus/visit-harvard">Visit 
+      Harvard</A></LI></UL></LI></UL></LI></UL></DIV>
+<DIV class="nav-group nav-group--callouts">
+<UL class="clearfix">
+  <LI class="nav-left-half">
+  <UL class="clearfix" role="presentation">
+    <LI><A href="http://news.harvard.edu/gazette/">Gazette News </A></LI>
+    <LI><A href="https://www.harvard.edu/events">Events </A></LI></UL></LI>
+  <LI class="nav-right-half">
+  <UL class="clearfix" role="presentation">
+    <LI><A href="http://campaign.harvard.edu/">Harvard Campaign </A></LI>
+    <LI><A href="http://alumni.harvard.edu/givenow">Give 
+</A></LI></UL></LI></UL></DIV>
+<DIV class="list-clean">
+<UL class="nav-group nav-group--top-bar">
+  <LI class="first"><A class="first" 
+  href="https://www.harvard.edu/faculty">Faculty</A></LI>
+  <LI><A href="https://www.harvard.edu/staff">Staff</A></LI>
+  <LI><A href="https://www.harvard.edu/students">Students</A></LI>
+  <LI><A href="http://alumni.harvard.edu/">Alumni</A></LI>
+  <LI><A href="https://www.harvard.edu/parents">Parents</A></LI>
+  <LI><A 
+href="https://www.harvard.edu/on-campus/visit-harvard">Visitors</A></LI>
+  <LI class="last"><A class="last" href="https://www.harvard.edu/media-relations">Media</A></LI></UL></DIV></DIV></NAV>
+<FORM class="search-area" id="searchArea" role="search" action="/searches/" 
+method="get"><LABEL for="siteSearch"><SPAN class="is-visually-hidden">Search: 
+</SPAN> </LABEL> 
+<INPUT name="searchtext" class="input-search" id="searchSite" aria-label="search" type="search" placeholder="What can we help you find?" value=""> 
+<BUTTON class="btn--mobile-site-search" type="button"><SPAN class="is-visually-hidden">
+Open Search </SPAN> </BUTTON> </FORM></HEADER><main class="main-base" id="mainArea" 
+role="main">
+<DIV class="view view-annoucement view-id-annoucement view-display-id-block_for_homepage view-dom-id-a38f6bc1c84b1a3aef995916430480ce"></DIV><SECTION 
+class="stitle-home-primary-feature c-bg-crimson c-txt-white card-callout-media" 
+data-moduletitle="home-primary-feature">
+<DIV class="wrapper wrapper--no-pad card card--nid-5579401 bg-tint clearfix">
+<DIV class="card-callout-media__media"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-gazettes-top-stories-of-2017/"><IMG 
+class="img-callout-narrow" alt="Mother and daughter carry box on move-in day at Harvard" 
+src="Harvardu_files/yemove%2520copy.jpg"><IMG class="img-callout-wide" alt="Mother and daughter carry box on move-in day at Harvard" 
+src="Harvardu_files/yemove.jpg"> </A> </DIV>
+<DIV class="card-callout-media__text">
+<H2 class="txt-h1-alt"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-gazettes-top-stories-of-2017/">Top 
+stories of 2017</A> </H2>
+<P class="txt-h6"></P>
+<P>
+<P>Milestones, innovation, analysis, and inspiration from the University and 
+beyond</P>
+<P></P><A class="btn btn--reverse" href="https://news.harvard.edu/gazette/story/2017/12/harvard-gazettes-top-stories-of-2017/">
+Read story </A> </DIV></DIV></SECTION><SECTION class="stitle-home-secondary-feature c-bg-white c-txt-dark padding-sm" 
+data-moduletitle="home-secondary-feature">
+<DIV class="wrapper">
+<DIV class="grid grid--3 grid--3a">
+<DIV class="w-33 w-100--m">
+<DIV class="card card--nid-5535886 card--gazette gz_science c-txt-dark card--media-top ">
+<DIV class="card__media card__media--img"><A href="https://news.harvard.edu/gazette/story/2017/12/single-stranded-dna-and-rna-origami-could-become-tiny-nanofactories/"><IMG 
+class="img-sm" alt="DNA strands" src="Harvardu_files/single-strand-dna-origami-605a.jpg"><IMG 
+class="img-lg" alt="DNA strands" src="Harvardu_files/single-strand-dna-origami-605a(1).jpg"></A></DIV>
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Gazette</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/single-stranded-dna-and-rna-origami-could-become-tiny-nanofactories/">Single-stranded 
+DNA and RNA origami go live</A> </H3>
+<P class="txt-h6"></P>
+<DIV class="card__text">
+<P>New approach has potential to create tiny nanofactories for production of 
+pharmaceuticals</P></DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-1"><A href="https://news.harvard.edu/gazette/story/2017/12/single-stranded-dna-and-rna-origami-could-become-tiny-nanofactories/">
+Read story </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-33 w-50--m">
+<DIV class="card card--nid-5563061 card--gazette gz_campus c-txt-dark card--media-top ">
+<DIV class="card__media card__media--img"><A href="https://news.harvard.edu/gazette/story/2017/12/christmas-carol-tradition-returns-to-renovated-memorial-church/"><IMG 
+class="img-sm" alt="Caroling at Memorial Church" src="Harvardu_files/171212carols12.jpg"><IMG 
+class="img-lg" alt="Caroling at Memorial Church" src="Harvardu_files/171212carols12%2520copy.jpg"></A></DIV>
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Gazette</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/christmas-carol-tradition-returns-to-renovated-memorial-church/">Christmas 
+carol tradition returns</A> </H3>
+<P class="txt-h6"></P>
+<DIV class="card__text">
+<P>Holiday spirit fills renewed Memorial Church, as services raise $10,000 for 
+crisis center</P></DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-1"><A href="https://news.harvard.edu/gazette/story/2017/12/christmas-carol-tradition-returns-to-renovated-memorial-church/">
+Read story </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-33 w-50--m">
+<DIV class="card card--nid-5475106 card--gazette gz_campus c-txt-dark card--media-top ">
+<DIV class="card__media card__media--img"><A href="https://news.harvard.edu/gazette/story/2017/12/inspired-by-parents-harvard-grad-gives-back/"><IMG 
+class="img-sm" alt="Harvard graduate with her family" src="Harvardu_files/yesenia605.jpg"><IMG 
+class="img-lg" alt="Harvard graduate with her family" src="Harvardu_files/yesenia605%2520copy.jpg"></A></DIV>
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Gazette</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/inspired-by-parents-harvard-grad-gives-back/">Pride 
+in education, and family</A> </H3>
+<P class="txt-h6"></P>
+<DIV class="card__text">
+<P>Inspired by her parents, first-generation grad Yesenia Ortiz is committed to 
+helping those in need</P></DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-1"><A href="https://news.harvard.edu/gazette/story/2017/12/inspired-by-parents-harvard-grad-gives-back/">
+Watch video </A> </DIV></DIV></DIV></DIV></DIV></DIV></DIV></SECTION><SECTION 
+class="stitle-home-events-feed c-bg-blue-dark c-txt-white padding-sm" 
+data-moduletitle="home-events-feed"><HEADER>
+<H2 class="txt-h1-alt txt-center  c-txt-white">Events</H2></HEADER>
+<DIV class="wrapper">
+<DIV class="grid grid--4a">
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card card--event card--homepage-grid c-txt-dark">
+<DIV class="card__media"><A href="https://hmnh.harvard.edu/orb-weavers-web-masters-spider-world"><IMG 
+alt="" src="Harvardu_files/DgAptJvFUiU5kydGLfYnN2n9.png"></A></DIV>
+<DIV class="card--event__content content-area">
+<DIV class="event-mdt txt-center txt-uppercase">
+<P class="card--event__time">Through March 22 </P></DIV>
+<H3 class="txt-h4"><A class="card--event__link" href="https://hmnh.harvard.edu/orb-weavers-web-masters-spider-world">Orb-Weavers: 
+Web Masters of the Spider World</A></H3></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card card--event card--homepage-grid c-txt-dark">
+<DIV class="card__media"><A href="https://semiticmuseum.fas.harvard.edu/stone-silicone"><IMG 
+alt="" src="Harvardu_files/DgDU2a-Pwp_dWYv0L6tX-gNN.jpg"></A></DIV>
+<DIV class="card--event__content content-area">
+<DIV class="event-mdt txt-center txt-uppercase">
+<P class="card--event__time">New Exhibition </P></DIV>
+<H3 class="txt-h4"><A class="card--event__link" href="https://semiticmuseum.fas.harvard.edu/stone-silicone">From 
+Stone to Silicone: Recasting Mesopotamian 
+Monuments</A></H3></DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card card--event card--homepage-grid c-txt-dark">
+<DIV class="card__media"><A href="http://www.radcliffe.harvard.edu/event/2017-altered-gazes-exhibition"><IMG 
+alt="" src="Harvardu_files/DgAfwFiOLDiT2bNS3Uueh3_p.jpg"></A></DIV>
+<DIV class="card--event__content content-area">
+<DIV class="event-mdt txt-center txt-uppercase">
+<P class="card--event__time">Through Jan. 19 </P></DIV>
+<H3 class="txt-h4"><A class="card--event__link" href="http://www.radcliffe.harvard.edu/event/2017-altered-gazes-exhibition">Altered 
+Gazes</A></H3></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card card--event card--homepage-grid c-txt-dark">
+<DIV class="card__media"><A href="https://hmnh.harvard.edu/world-drop-photographic-explorations-microbial-life"><IMG 
+alt="" src="Harvardu_files/DgBM16Ikq4Gc5HW9ZcOS_dou.png"></A></DIV>
+<DIV class="card--event__content content-area">
+<DIV class="event-mdt txt-center txt-uppercase">
+<P class="card--event__time">Through Jan. 7 </P></DIV>
+<H3 class="txt-h4"><A class="card--event__link" href="https://hmnh.harvard.edu/world-drop-photographic-explorations-microbial-life">World 
+in a Drop: Photographic Explorations of Microbial 
+Life</A></H3></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="txt-center deck__cta-area"><A class="btn btn--reverse" href="https://www.harvard.edu/events">
+See more events </A> </DIV></DIV></SECTION><SECTION class="stitle-home-multimedia-feature c-bg-white c-txt-dark padding-sm" 
+data-moduletitle="home-multimedia-feature"><HEADER>
+<H2 class="txt-h1-alt txt-center ">Video</H2></HEADER>
+<DIV class="wrapper">
+<DIV class="grid grid--3 grid--3b-mirror">
+<DIV class="w-66">
+<DIV class="card card--nid-5436561 card--youtube c-txt-dark card--media-top ">
+<DIV class="card__media">
+<DIV class="embed-container  card--16-9"><IFRAME src="res://ieframe.dll/dnserrordiagoff.htm" 
+frameborder="0" allowfullscreen=""></IFRAME> </DIV></DIV>
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Youtube</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<H3 class="card__title">Harvard students help in food recovery and donation 
+program </H3>
+<P class="txt-h6"></P>
+<DIV class="card__text">
+<P>Since 2014 Harvard University has been teaming up with local non-profit, Food 
+for Free on a food recovery and donation program that works to curb food 
+insecurity in Cambridge and Boston.</P></DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-33">
+<DIV class="card card--nid-5436986 card--youtube c-txt-dark card--media-top ">
+<DIV class="card__media">
+<DIV class="embed-container  card--16-9"><IFRAME src="res://ieframe.dll/dnserrordiagoff.htm" 
+frameborder="0" allowfullscreen=""></IFRAME> </DIV></DIV>
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Youtube</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<H3 class="card__title">Harvard students come face to face with refugees </H3>
+<P class="txt-h6"></P>
+<DIV class="card__text">
+<P>A large shipping container was on campus to serve as a “portal” equipped with 
+immersive audio-visual technology that allows people to have live, 
+person-to-person conversations with individuals in displaced communities in 
+Iraq, Jordan, and Germany (refugees from Syria) who are in an identical shipping 
+container across the globe.</P></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="txt-center deck__cta-area"><A class="btn " href="http://www.harvard.edu/about-harvard/multimedia">
+See more multimedia </A> </DIV></DIV></SECTION><SECTION class="rssfeed-module  stitle-home-news-feed-gazette c-bg-green-light c-txt-dark padding-sm" 
+data-moduletitle="home-news-feed-gazette"><HEADER>
+<H2 class="txt-h1-alt txt-center ">Latest Harvard Gazette News</H2></HEADER>
+<DIV class="wrapper">
+<DIV class="grid grid--4a">
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<DIV class="card__thumb"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-study-illuminates-botanical-bias/"><IMG 
+alt="Harvard study illuminates botanical bias" src="Harvardu_files/120617_herbarium_299_140.jpg"></A></DIV>
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-study-illuminates-botanical-bias/">Harvard 
+study illuminates botanical bias</A> </H3>
+<P class="card__timestamp"><time datetime="2017-12-22">December 22, 2017</time> 
+</P>
+<DIV class="card__text">Climate change studies that rely on herbarium 
+collections need to account for biases in the data, new research says. 
+</DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-study-illuminates-botanical-bias/">
+Read more </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<DIV class="card__thumb"><A href="https://news.harvard.edu/gazette/story/2017/12/metoo-surge-could-change-society-in-pivotal-ways-harvard-analysts-say/"><IMG 
+alt="#MeToo surge could change society in pivotal ways, Harvard analysts say" 
+src="Harvardu_files/womensmarch2017_ap_17022400780539_140.jpg"></A></DIV>
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/metoo-surge-could-change-society-in-pivotal-ways-harvard-analysts-say/">#MeToo 
+surge could change society in pivotal ways, Harvard analysts say</A> </H3>
+<P class="card__timestamp"><time datetime="2017-12-21">December 21, 2017</time> 
+</P>
+<DIV class="card__text">The women’s revolt against sexual harassment and abuse: 
+why now, and where to. </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://news.harvard.edu/gazette/story/2017/12/metoo-surge-could-change-society-in-pivotal-ways-harvard-analysts-say/">
+Read more </A> </DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<DIV class="card__thumb"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-president-voices-concern-after-endowment-tax-passes/"><IMG 
+alt="Harvard president voices concern after endowment tax passes" src="Harvardu_files/taxreax_140.jpg"></A></DIV>
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-president-voices-concern-after-endowment-tax-passes/">Harvard 
+president voices concern after endowment tax passes</A> </H3>
+<P class="card__timestamp"><time datetime="2017-12-20">December 20, 2017</time> 
+</P>
+<DIV class="card__text">Harvard President Drew Faust said that the tax bill 
+represents an unprecedented attack on the tax-exempt status of nonprofits and 
+charities because it taxes, for the first time, income for such an … 
+</DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://news.harvard.edu/gazette/story/2017/12/harvard-president-voices-concern-after-endowment-tax-passes/">Read 
+more </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<DIV class="card__thumb"><A href="https://news.harvard.edu/gazette/story/2017/12/professor-calestous-juma-leaves-legacy-of-good-work/"><IMG 
+alt="Professor Calestous Juma leaves legacy of good work" src="Harvardu_files/faculty-calestous_juma_140.jpg"></A></DIV>
+<H3 class="card__title"><A href="https://news.harvard.edu/gazette/story/2017/12/professor-calestous-juma-leaves-legacy-of-good-work/">Professor 
+Calestous Juma leaves legacy of good work</A> </H3>
+<P class="card__timestamp"><time datetime="2017-12-20">December 20, 2017</time> 
+</P>
+<DIV class="card__text"> Calestous Juma, 64, who died Dec. 15 after a long 
+illness, was a professor of the practice of international development at Harvard 
+Kennedy School and director of the Belfer Center’s Science, … </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://news.harvard.edu/gazette/story/2017/12/professor-calestous-juma-leaves-legacy-of-good-work/">Read 
+more </A> 
+</DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></SECTION><SECTION class="card--news-signup txt-center stitle-home-gazette-signup c-bg-dark c-txt-white padding-sm" 
+data-moduletitle="home-gazette-signup">
+<P class="card--news-signup__leadin wrapper wrapper--3-down">Get the latest 
+Harvard Gazette news delivered to your inbox. </P>
+<FORM class="content-area" id="newspaper_signup_form" action="https://www.pages01.net/harvard/gazette" 
+method="get">
+<DIV class="form-row display-inline-block"><INPUT name="email" class="input-text input-reveal" id="newspaper_email" type="email" placeholder="your_email@email.com" value=""> 
+<LABEL class="label-reveal" for="newspaper_email">Your Email: </LABEL> </DIV>
+<DIV class="form-row display-inline-block"><BUTTON class="btn btn--min-width btn--reverse" 
+id="newspaper_signup_btn" type="submit">Subscribe </BUTTON> 
+</DIV></FORM></SECTION><SECTION class="stitle-home-instagram-media-feed c-bg-crimson c-txt-white padding-sm instagram-items" 
+data-moduletitle="home-instagram-media-feed"><HEADER>
+<H2 class="txt-h1-alt txt-center  c-txt-white">Harvard on 
+Instagram</H2></HEADER>
+<DIV class="wrapper">
+<DIV class="grid grid--4a">
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--instagram card--gallery">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Instagram</SPAN> 
+</DIV></DIV>
+<UL class="list-clean card-gallery__list ">
+  <LI><A href="https://www.instagram.com/p/Bc-K68dnPRh/"><IMG alt="Instagram image" 
+  src=""> </A> </LI></UL></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--instagram card--gallery">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Instagram</SPAN> 
+</DIV></DIV>
+<UL class="list-clean card-gallery__list ">
+  <LI><A href="https://www.instagram.com/p/Bc7fJ-AHQ8k/"><IMG alt="Instagram image" 
+  src=""> </A> </LI></UL></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--instagram card--gallery">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Instagram</SPAN> 
+</DIV></DIV>
+<UL class="list-clean card-gallery__list ">
+  <LI><A href="https://www.instagram.com/p/Bc5GJcWne0m/"><IMG alt="Instagram image" 
+  src=""> </A> </LI></UL></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--instagram card--gallery">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Instagram</SPAN> 
+</DIV></DIV>
+<UL class="list-clean card-gallery__list ">
+  <LI><A href="https://www.instagram.com/p/Bc2W3zwn0Z9/"><IMG alt="Instagram image" 
+  src=""> </A> </LI></UL></DIV></DIV></DIV></DIV></DIV></DIV></SECTION><SECTION 
+class="stitle-home-social-media-feed c-bg-blue c-txt-white padding-sm social-items" 
+data-moduletitle="home-social-media-feed">
+<DIV class="wrapper wrapper--carousel"><HEADER>
+<H2 class="txt-h1-alt txt-center  c-txt-white">Harvard on Twitter</H2></HEADER>
+<DIV class="grid--3a carousel">
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-23">December 23, 2017</time> 
+</P>
+<P class="card__text txt-up-1">17 healthy gift ideas from our friends <A href="http://twitter.com/HSPHnutrition">@HSPHnutrition</A> 
+<A href="http://greenharvard.link/c628">http://greenharvard.link/c628</A> <A 
+href="https://t.co/Jg3QEXvYPw">https://t.co/Jg3QEXvYPw</A> </P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/GreenHarvard/status/944607792341667840">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-23">December 23, 2017</time> 
+</P>
+<P class="card__text txt-up-1">There's nothing like a Your Harvard celebration 
+and this February we're bringing the party to you, San Francisco!… <A href="https://twitter.com/i/web/status/944606076741222400">https://twitter.com/i/web/status/944606076741222400</A> 
+</P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardAlumni/status/944606076741222400">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-23">December 23, 2017</time> 
+</P>
+<P class="card__text txt-up-1">Learn something new in 2018 and browse <A href="http://twitter.com/search?q=%23HarvardX">#HarvardX</A> 
+courses—from computer science to Chinese culture <A href="http://hrvd.me/harvafe07">http://hrvd.me/harvafe07</A> 
+</P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/Harvard/status/944569573852045312">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-23">December 23, 2017</time> 
+</P>
+<P class="card__text txt-up-1">#GNN is all about new connections and this 
+January you're invited to make new ones in 105 cities worldwide!… <A href="https://twitter.com/i/web/status/944561734689394688">https://twitter.com/i/web/status/944561734689394688</A> 
+</P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardAlumni/status/944561734689394688">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-23">December 23, 2017</time> 
+</P>
+<P class="card__text txt-up-1">The <A href="http://twitter.com/search?q=%23HarvardNetwork">#HarvardNetwork</A> 
+expands to Frankfurt, Germany! Let <A 
+href="http://twitter.com/HarvardClubRM">@HarvardClubRM</A> know if you'll be 
+attending and RSVP now! <A 
+href="http://hvrdalum.me/proxi6ba3">http://hvrdalum.me/proxi6ba3</A> <A href="http://twitter.com/search?q=%23GNN">#GNN</A> 
+</P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardAlumni/status/944493550913323008">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-22">December 22, 2017</time> 
+</P>
+<P class="card__text txt-up-1">Winthrop House addition honors alumnus Robert 
+Beren '47, MBA'50 <A 
+href="http://hvrdalum.me/winth29bc">http://hvrdalum.me/winth29bc</A> <A href="http://twitter.com/search?q=%23HouseRenewal">#HouseRenewal</A> 
+<A href="https://t.co/DdURLFkPog">https://t.co/DdURLFkPog</A> </P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardAlumni/status/944431878349746176">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-22">December 22, 2017</time> 
+</P>
+<P class="card__text txt-up-1">Nashville <A href="http://twitter.com/search?q=%23GNN">#GNN</A> 
+is coming your way! Enjoy a night out with <A href="http://twitter.com/harvardtn">@harvardtn</A> 
+and the <A 
+href="http://twitter.com/search?q=%23HarvardNetwork">#HarvardNetwork</A>! <A 
+href="http://hvrdalum.me/proxi9392">http://hvrdalum.me/proxi9392</A> </P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardAlumni/status/944400166894874629">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-12-22">December 22, 2017</time> 
+</P>
+<P class="card__text txt-up-1">This Sunday <A href="http://twitter.com/ColumbaStewart">@ColumbaStewart</A> 
+AB'79 talks on <A href="http://twitter.com/60minutes">@60minutes</A> about 
+saving ancient manuscripts from ISIS <A 
+href="http://hvrdalum.me/savinf09b">http://hvrdalum.me/savinf09b</A> </P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardAlumni/status/944356377216077824">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-09-20">September 20, 2017</time> 
+</P>
+<P class="card__text txt-up-1">Harvard’s fall schedule is packed with good 
+reasons to make room in yours: <A 
+href="http://hvrd.me/wH1i30feSHM">http://hvrd.me/wH1i30feSHM</A> </P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardNews/status/910556824872644619">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content-area">
+<DIV class="card c-txt-dark card--3a card--small card--twitter card--media-none txt-center">
+<DIV class="card__content">
+<DIV class="card__content__heading"><SPAN class="social-icon">Twitter</SPAN> 
+</DIV>
+<DIV class="card__content__source">
+<P class="card__timestamp"><time datetime="2017-09-21">September 21, 2017</time> 
+</P>
+<P class="card__text txt-up-1">Meet Harvard's First Full-Time Muslim Chaplain: 
+<A href="http://hvrd.me/E8Bu30feSQA">http://hvrd.me/E8Bu30feSQA</A> <A href="http://twitter.com/wgbh">@wgbh</A> 
+</P></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-btn"><A class="btn" href="http://twitter.com/HarvardNews/status/910945500408500224">
+View this Tweet </A> </DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="txt-center deck__cta-area"><A class="btn btn--reverse" href="https://www.harvard.edu/about-harvard/social-media">
+Social media directory </A> </DIV></DIV></SECTION><SECTION class="rssfeed-module  stitle-home-news-feed-all c-bg-green-light c-txt-dark padding-sm" 
+data-moduletitle="home-news-feed-all"><HEADER>
+<H2 class="txt-h1-alt txt-center ">News from Around Harvard</H2></HEADER>
+<DIV class="wrapper">
+<DIV class="grid grid--4a">
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/harvard-women%E2%80%99s-basketball-vs-brown">Harvard 
+Women’s Basketball vs. Brown</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-27">January 27, 2018</time> 
+</P>
+<DIV class="card__text">It’s Community Day! FREE tickets for all Allston, 
+Brighton &amp; Cambridge Residents receive free tickets. Use promo code 
+COMMUNITY2017 at checkout. … </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/harvard-women%E2%80%99s-basketball-vs-brown">Read 
+more </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/us-foreign-policy-inside-out">US 
+Foreign Policy from the Inside Out</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-25">January 25, 2018</time> 
+</P>
+<DIV class="card__text">Former United Nations representative and member of 
+President Obama’s cabinet Samantha Power will offer a comprehensive overview of 
+US foreign policy. … </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/us-foreign-policy-inside-out">Read 
+more </A> </DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/plaza-winterfest">Plaza 
+WinterFest</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-22">January 22, 2018</time> 
+</P>
+<DIV class="card__text">Running January through March, Plaza WinterFest is a 
+great way to enjoy the cold winter months in Cambridge! Join us from 12-8pm 
+daily for seasonal games including curling, ice bowling, and ice … </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/plaza-winterfest">Read 
+more </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/exhibition-material-systems-digital-design-and-fabrication">Exhibition: 
+Material Systems: Digital Design and Fabrication</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-22">January 22, 2018</time> 
+</P>
+<DIV class="card__text">This exhibition will feature ceramics in experimental 
+architectural applications made&nbsp;by students from the Harvard Graduate 
+School of Design during the Fall 2017 course,&nbsp;Material Systems: Digital … 
+</DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/exhibition-material-systems-digital-design-and-fabrication">Read 
+more </A> </DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="grid grid--4a">
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/harvard-mens-hockey-vs-quinnipiac">Harvard 
+Men&amp;#039;s Hockey vs. Quinnipiac</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-13">January 13, 2018</time> 
+</P>
+<DIV class="card__text">Stay after the game for an autograph session from your 
+favorite Crimson players! Free Photos will be provided. Learn more about Men's 
+Hockey vs. Quinnipiac. </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/harvard-mens-hockey-vs-quinnipiac">
+Read more </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/exhibition-marca-x">Exhibition: 
+Marca X</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-11">January 11, 2018</time> 
+</P>
+<DIV class="card__text">Marca X&nbsp;is a collaborative exhibition organized by 
+the Boston LGBTQIA Artists Alliance (BLAA), the Harvard Ed Portal (HEP), 
+Inquilinos Boricuas en Acción (IBA), and the David Rockefeller Center … 
+</DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/exhibition-marca-x">Read 
+more </A> </DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="grid">
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/harvard-mens-basketball-vs-union">Harvard 
+Men&amp;#039;s Basketball vs. Union</A> </H3>
+<P class="card__timestamp"><time datetime="2018-01-06">January 6, 2018</time> 
+</P>
+<DIV class="card__text">Stay after the game for an autograph session from your 
+favorite Crimson players! Free Photos will be provided. Learn more about Harvard 
+Men's Basketball vs.Union.&nbsp; </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/harvard-mens-basketball-vs-union">
+Read more </A> </DIV></DIV></DIV></DIV></DIV>
+<DIV class="w-50">
+<DIV class="card c-txt-dark card--gazette">
+<DIV class="card__content">
+<DIV class="card__content__source">
+<H3 class="card__title"><A href="https://community.harvard.edu/event/december-vacation-week-activities">December 
+Vacation Week Activities</A> </H3>
+<P class="card__timestamp"><time datetime="2017-12-26">December 26, 2017</time> 
+</P>
+<DIV class="card__text">Free,&nbsp;fun, family activities allow visitors to 
+explore arts from the ancient Near East. Activities change daily: make Egyptian 
+accessories, inscribe clay tablets, or decode hieroglyphics. … </DIV></DIV>
+<DIV class="card__outro">
+<DIV class="card__outro__cta-2"><A href="https://community.harvard.edu/event/december-vacation-week-activities">Read 
+more </A> 
+</DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></SECTION></main><FOOTER 
+class="footer-base" id="footerArea" role="contentinfo">
+<DIV class="wrapper wrapper--1-down content-area"><A class="jump-to-nav jump-to-nav--hidden" 
+href="https://www.harvard.edu/#page">Jump to Top </A> 
+<DIV class="grid grid--footer">
+<DIV class="w-20 w-33--m">
+<H1 class="footer__heading txt-h5">Website </H1>
+<UL class="list-clean" display_stickynav="yes" ul_attributes="nav-group nav-group--top-bar">
+  <LI class="menu-449 first"><A title="Accessibility@0" href="http://www.accessibility.harvard.edu/">Accessibility</A></LI>
+  <LI class="menu-683 last"><A title="Sitemap@0" href="https://www.harvard.edu/sitemap">Sitemap</A></LI></UL></DIV>
+<DIV class="w-20 w-33--m">
+<H2 class="footer__heading txt-h5">Get in Touch </H2>
+<UL class="list-clean" display_stickynav="yes" ul_attributes="nav-group nav-group--top-bar">
+  <LI class="menu-660 first"><A title="Contact@2" href="https://www.harvard.edu/contact-harvard">Contact 
+  Harvard</A></LI>
+  <LI class="menu-2078"><A title="" href="https://www.harvard.edu/about-harvard/maps-directions">Maps 
+  &amp; Directions</A></LI>
+  <LI class="menu-2383"><A title="" 
+  href="http://hr.harvard.edu/jobs">Jobs</A></LI>
+  <LI class="menu-2384 last"><A title="" href="https://www.harvard.edu/about-harvard/social-media-and-newsletter-directory">Social 
+  Media</A></LI></UL></DIV>
+<DIV class="w-20 w-33--m">
+<H3 class="footer__heading txt-h5">Security &amp; Brand </H3>
+<UL class="list-clean" display_stickynav="yes" ul_attributes="nav-group nav-group--top-bar">
+  <LI class="menu-448 first"><A title="Privacy@0" href="https://www.harvard.edu/privacy-statement">Privacy 
+  Statement</A></LI>
+  <LI class="menu-447"><A title="Infringement@0" href="https://www.harvard.edu/copyright-issue">Report 
+  Copyright Infringement</A></LI>
+  <LI class="menu-861"><A title="Report Security Issue" href="https://www.harvard.edu/security-issue">Report 
+  Security Issue</A></LI>
+  <LI class="menu-446 last"><A title="TrademarkNotice@0" href="http://trademark.harvard.edu/pages/trademark-notice">Trademark 
+  Notice</A></LI></UL></DIV>
+<DIV class="w-footer-last">
+<H4 class="footer__heading txt-h5 is-visually-hidden">Social Media &amp; other 
+Application Links </H4>
+<UL class="list-social-links list-clean">
+  <LI><A class="social-link social-link--facebook" href="http://facebook.com/harvard"><SPAN 
+  class="is-visually-hidden">Facebook </SPAN> </A></LI>
+  <LI><A class="social-link social-link--twitter" href="http://twitter.com/harvard"><SPAN 
+  class="is-visually-hidden">Twitter </SPAN> </A></LI>
+  <LI><A class="social-link social-link--instagram" href="http://www.instagram.com/harvard"><SPAN 
+  class="is-visually-hidden">Instagram </SPAN> </A></LI>
+  <LI><A class="social-link social-link--youtube" href="http://youtube.com/harvard"><SPAN 
+  class="is-visually-hidden">YouTube </SPAN> </A></LI>
+  <LI><A class="social-link social-link--soundcloud" href="https://soundcloud.com/harvard"><SPAN 
+  class="is-visually-hidden">SoundCloud </SPAN> </A></LI>
+  <LI><A class="social-link social-link--google-plus" href="http://plus.google.com/+harvard"><SPAN 
+  class="is-visually-hidden">Google Plus </SPAN> </A></LI>
+  <LI><A class="social-link social-link--linkedin" href="https://www.linkedin.com/edu/school?id=18483"><SPAN 
+  class="is-visually-hidden">LinkedIn </SPAN> </A></LI>
+  <LI><A class="social-link social-link--itunes" href="http://www.harvard.edu/itunes"><SPAN 
+  class="is-visually-hidden">iTunes </SPAN> </A></LI></UL>
+<P class="w-60 other-apps"><A href="https://www.harvard.edu/all-harvard-mobile">
+Harvard Apps </A> </P></DIV></DIV>
+<P class="footer__outro">© 2017 The President and Fellows of Harvard College 
+</P></DIV></FOOTER></DIV>
+<SCRIPT src="Harvardu_files/jquery-1.11.2.min.js"></SCRIPT>
+ 
+<SCRIPT src="Harvardu_files/script.js"></SCRIPT>
+ 
+<SCRIPT src="Harvardu_files/ResizeSensor.js"></SCRIPT>
+ 
+<SCRIPT src="Harvardu_files/ElementQueries.js"></SCRIPT>
+ 
+<SCRIPT src="Harvardu_files/slick.js"></SCRIPT>
+ 
+<SCRIPT>
+$('.grid--3a.carousel').slick( {
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+$('.grid--full.carousel').slick( {
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+		autoplay: true,
+  	autoplaySpeed: 4000,
+  });
+$('.grid--full-w-view.carousel .view .view-content').slick( {
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+		autoplay: true,
+  	autoplaySpeed: 4000,
+  });
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+		var _sf_async_config={uid:2327,domain:"harvard.edu"};
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			   "js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		})();
+		
+		</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+ (function(w) {
+   w._sv = w._sv || {};
+   w._sv.trackingCode = 'FfgooJjBjzhBdGbpsXIHyvlzrdrimWab'; 
+   var s = document.createElement('script');
+   s.src = '//api.survicate.com/assets/survicate.js';
+   s.async = true;
+   var e = document.getElementsByTagName('script')[0];
+   e.parentNode.insertBefore(s, e);
+ })(window);
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5719832647","applicationID":"56252957","transactionName":"b1AAMENZW0dZW0dfW1YaNxZYF1xaXF1LGERQRQ==","queueTime":0,"applicationTime":18,"atts":"QxcDRgtDSEk=","errorBeacon":"bam.nr-data.net","agent":""}</SCRIPT>
+ </BODY></HTML>

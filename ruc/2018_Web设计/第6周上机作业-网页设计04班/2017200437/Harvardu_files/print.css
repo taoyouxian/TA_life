@@ -1,0 +1,12 @@
+p.edit_content_shortcuts {
+	display: none;
+}
+.harvard-heading__link {
+	display: none;
+}
+.fixed-side-col {
+	display: none;
+}
+.header-base--has-photo {
+	height: 0px !important; min-height: 0px; background-image: none;
+}

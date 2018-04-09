@@ -1,0 +1,42 @@
+.sum {
+	background-color: rgb(171, 138, 108);
+}
+.sum-en {
+	background-color: rgb(171, 138, 108);
+}
+.sum-content {
+	background-color: rgb(171, 138, 108);
+}
+.deps {
+	background-color: rgb(204, 177, 142);
+}
+.deps-en {
+	background-color: rgb(204, 177, 142);
+}
+.deps-content {
+	background-color: rgb(204, 177, 142);
+}
+.serv {
+	background-color: rgb(148, 142, 115);
+}
+.serv-en {
+	background-color: rgb(148, 142, 115);
+}
+.serv-content {
+	background-color: rgb(148, 142, 115);
+}
+.visitruc-en {
+	background-color: rgb(148, 142, 115);
+}
+.visitruc-content {
+	background-color: rgb(148, 142, 115);
+}
+.links {
+	background-color: rgb(255, 238, 198);
+}
+.links-content {
+	background-color: rgb(255, 238, 198);
+}
+.no-bg-color {
+	background: none;
+}

@@ -1,0 +1,404 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0022)http://www.ruc.edu.cn/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<TITLE>中国人民大学 | RENMIN UNIVERSITY of CHINA</TITLE> 
+<SCRIPT type="text/javascript">
+function ie6(){
+ if (!-[1,]&&!window.XMLHttpRequest){
+    window.location.href="/home1024.html";
+    return false;
+  };
+ if (screen.width < 700){
+    window.location.href="/mobile.html";
+    return false;
+  };
+ if (screen.width < 1240){
+    window.location.href="/home1024.html";
+    return false;
+  }; 
+}
+ie6();
+</SCRIPT>
+ <LINK href="/wp-content/themes/rucweb/images/ruc.ico" rel="shortcut icon" type="image/x-icon"> 
+<LINK href="ruc_files/style.css" rel="stylesheet" type="text/css"> <LINK href="ruc_files/bgstretcher.css" 
+rel="stylesheet" type="text/css"> <LINK href="ruc_files/style-1.css" rel="stylesheet" 
+type="text/css"> 
+<SCRIPT src="ruc_files/jquery.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="ruc_files/bgstretcher.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+	$(document).ready(function(){
+	var storage = window.localStorage;
+        var winHeight = jQuery(window).height();
+        var navPosition = $('#tipimg').position();
+
+        $('.slide-arrow').css('top',winHeight*0.32);
+        $('#nav').css('top',winHeight*0.32);
+        $('#nav').css('left',navPosition.left-36);
+        
+        jQuery(window).bind("resize", changeSAposition);
+ 
+        function changeSAposition( e ) {
+            var winHeight = jQuery(window).height();
+            var navPosition = $('#tipimg').position();
+            
+            $('.slide-arrow').css('top',winHeight*0.32);
+            $('#nav').css('left',navPosition.left-36);
+        };
+        
+        //  Initialize Backgound Stretcher	   	
+        $('BODY').bgStretcher({
+        images: ['/wp-content/themes/rucweb/images/ruc_bg_282.jpg','/wp-content/themes/rucweb/images/ruc_bg_281.jpg','/wp-content/themes/rucweb/images/ruc_bg_280.jpg','/wp-content/themes/rucweb/images/ruc_bg_279.jpg','/wp-content/themes/rucweb/images/ruc_bg_278.jpg','/wp-content/themes/rucweb/images/ruc_bg_277.jpg','/wp-content/themes/rucweb/images/ruc_bg_272.jpg','/wp-content/themes/rucweb/images/ruc_bg_273.jpg','/wp-content/themes/rucweb/images/ruc_bg_276.jpg'],
+        imageWidth: 1680, 
+        imageHeight: 1050,
+        transitionEffect: 'fade',
+        sequenceMode: 'normal',
+        buttonPrev: '#cclb-btn-prev',
+        buttonNext: '#cclb-btn-next',
+        nextSlideDelay: '45000',
+        preloadImg: true 
+  //pagination: '#nav'
+});                
+                $('#cclb-btn-pause').click(function(){
+                        if ($(this).html() == "Pause"){
+                                $(this).html("Resume");
+                                $(this).attr('class','cclb-btn-start');
+                                $('BODY').bgStretcher.pause();
+                        } else {
+                                $(this).html("Pause");
+                                $(this).attr('class','cclb-btn-pause');
+                                $('BODY').bgStretcher.play();
+                        }
+		})
+		
+		$('.logo').hover(function(){
+			$('.lang').slideDown(200);
+            $('.animate-area div').stop(true, true);
+			$('.sum-content').slideUp(200);
+			$('.animate').animate({
+				width: '200'
+			},200, function(){
+				$('.sum').removeClass('no-bg-color');
+				$('.sum-content span').removeClass('changebg');
+			});
+		},function(){
+			$('.lang').slideUp(200);
+		});
+
+		$('.animate span').mouseenter(function(){
+            $('#searchbox').slideUp(200);
+			$('.animate-area div').stop(true, true);
+			$('.animate').removeClass('no-bg-color');
+			$('.animate span').removeClass('changebg');
+			$(this).addClass('changebg');
+			$('.aa-content').hide();
+			var box = $(this).parent();
+			box.removeClass('animate');
+			box.animate({
+				width: '300'
+			}, 200, function(){
+				box.addClass('no-bg-color');
+				box.children('.aa-content').slideDown(200);
+				box.addClass('animate');
+			});
+			$('.animate').animate({
+				width: '150'
+			}, 200);
+		});
+		
+		$('.aa-content').mouseleave(function(){
+			$('.animate-area div').stop(true, true);
+			$(this).slideUp(200);
+			$('.animate').animate({
+				width: '200'
+			},200, function(){
+				$(this).removeClass('no-bg-color');
+				$('.animate span').removeClass('changebg');
+			});
+		});
+		
+		$('#search').click(function(){
+			$('#searchbox').toggle();
+			$(this).css('font-weight','700');
+		});
+		
+		$('#s').focusin(function(){
+			var val = $(this).val();
+			if(val == '请输入搜索内容...'){
+				$(this).val('');
+			}
+		});
+		
+		$('#s').focusout(function(){
+			var val = $(this).val();
+			if(val == ''){
+				$(this).val('请输入搜索内容...');
+			}
+		});
+		
+		$(document).keypress(function(e) {
+			if (e.shiftKey && e.which == 70) $('#searchbox').toggle();
+			$('#search').css('font-weight','700');
+		});
+		
+		
+		if (storage.getItem("lastvisitURL") && storage.getItem("lastvisitSite")){ 
+			$('#lastvisitLink').html(storage.getItem("lastvisitSite"));
+			$('#lastvisitLink').attr('href',storage.getItem("lastvisitURL"));
+			$('.lastvisit').show();
+		};
+
+		$('.newsbox').hover(function(){
+                        $('#togobox').attr('class','mb-left');
+                        $('.infolist').hide();
+                        $('#newslist').show();
+                });
+                $('.infobox').hover(function(){
+                	$('#togobox').attr('class','mb-left-info');
+                });
+                $('.infobox a').hover(function(){
+                        var target=$(this).attr('box');
+                        $('.infolist').hide();
+                        $('#'+target).show();
+                });
+                
+            	$('.links').hover(function(){
+          	$('#searchbox').slideDown();
+		$('.serv-content').slideUp(200);
+                $('.serv').removeClass('no-bg-color');;
+         	 });
+                
+	});
+	
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY>
+<DIV id="homepage">
+<DIV class="top">
+<DIV id="home-top">
+<DIV class="logo"><A href="http://www.ruc.edu.cn/"><IMG 
+src="ruc_files/logo.png"></A>					 
+<DIV class="lang"><SPAN>选择语言/Select Language</SPAN>                              
+            	 <SPAN><A class="lang_selected" 
+href="http://www.ruc.edu.cn/">中文版</A><A 
+href="http://www.ruc.edu.cn/en">International</A></SPAN>					 </DIV></DIV>
+<DIV class="top-links">
+<DIV class="animate-area">
+<DIV class="sum animate"><SPAN>学校概况</SPAN>							 
+<DIV class="sum-content aa-content"><A 
+href="http://www.ruc.edu.cn/intro">学校简介</A>								 <A href="http://www.ruc.edu.cn/department">机构设置</A>
+								 <A href="http://www.ruc.edu.cn/history">历史沿革</A>                        
+                                         <A 
+href="http://www.ruc.edu.cn/leaders">管理层</A>								 <A href="http://www.ruc.edu.cn/documentary">纪录片</A>
+							 </DIV></DIV>
+<DIV class="deps animate"><SPAN>院系机构</SPAN>							 
+<DIV class="deps-content aa-content"><A 
+href="http://www.ruc.edu.cn/humanities">人文学部</A>								 <A href="http://www.ruc.edu.cn/socialsciences">社会学部</A>
+								 <A href="http://www.ruc.edu.cn/economics">经济学部</A>								 <A href="http://www.ruc.edu.cn/lawandpolitics">法政学部</A>
+								 <A href="http://www.ruc.edu.cn/scienceandtechnology">理工学部</A>
+								 <A href="http://www.ruc.edu.cn/otherschools">其他</A>								 
+<DIV class="lastvisit"><LABEL>最近访问</LABEL><A id="lastvisitLink" href="http://www.ruc.edu.cn/#"></A>
+								 </DIV></DIV></DIV>
+<DIV class="serv animate"><SPAN>校园服务</SPAN>							 
+<DIV class="serv-content aa-content"><A 
+href="http://service.ruc.edu.cn/">服务中心</A>                                       
+                   	 
+<DIV class="two"><A href="http://www.lib.ruc.edu.cn/" 
+target="_blank">图书馆</A><A>/</A><A href="http://202.112.126.84:8084/" target="_blank">博物馆</A></DIV><A 
+href="http://xxgk.ruc.edu.cn/" target="_blank">信息公开</A>                          
+                                       
+<DIV class="two"><A href="http://v.ruc.edu.cn/" 
+target="_blank">微人大</A><A>/</A><A href="http://mail.ruc.edu.cn/">邮箱</A></DIV>
+<DIV class="two"><A href="http://www.ruc.edu.cn/calendar">校历</A><A>/</A><A href="http://www.ruc.edu.cn/yellowpage">黄页</A><A>/</A><A 
+href="http://www.ruc.edu.cn/map">地图</A></DIV>
+<DIV class="two"><A>信箱:</A><A href="mailto:shuji@ruc.edu.cn">书记</A><A>/</A><A 
+href="mailto:leader@ruc.edu.cn">校长</A></DIV></DIV></DIV></DIV>
+<DIV class="links"><A style="margin-left: 54px;" href="http://www.ruc.edu.cn/resource-student">学生</A><SPAN>|</SPAN> 
+                                                <A href="http://www.ruc.edu.cn/resource-staff">教职工</A><SPAN>|</SPAN> 
+                                                <A href="http://alumni.ruc.edu.cn/">校友</A><SPAN>|</SPAN> 
+                                                <A href="http://www.ruc.edu.cn/resource-guest">考生及访客</A> 
+                                         	 <!--<a href="http://media.ruc.edu.cn" target="_blank" title="网络电视" class="link2tv"></a>-->
+						 
+<DIV class="searchbox" id="searchbox">
+<FORM action="http://www.ruc.edu.cn/" method="get"><INPUT name="s" class="inputtext" id="s" type="text" value="请输入搜索内容...">
+								 <INPUT name="commit" class="submit" id="search_btn" type="image" src="ruc_files/trans-bg.png" 
+value="">							 </FORM>
+<DIV class="help">Shift+F可以关闭或打开</DIV><A class="help" href="http://www.ruc.edu.cn/archives/18395">帮助</A>
+						 </DIV></DIV></DIV></DIV></DIV>
+<DIV class="content">
+<DIV id="home-content">
+<DIV class="cc-long">
+<DIV class="mb-left" id="togobox">
+<DIV class="mbleft-nav">
+<DIV class="newsbox"><A href="http://news.ruc.edu.cn/" 
+target="_blank">新闻NEWS</A></DIV>
+<DIV class="infobox"><A style="width: 100px;" href="http://www.ruc.edu.cn/loadnoticelist?tid=1&amp;lid=1" 
+box="ntc"></A>             <A href="http://www.ruc.edu.cn/loadnoticelist?tid=1&amp;lid=1" 
+box="ntc">公告</A>             <A href="http://www.ruc.edu.cn/loadnoticelist?tid=3&amp;lid=1" 
+box="acd">学术</A>             <A href="http://www.ruc.edu.cn/loadnoticelist?tid=4&amp;lid=1" 
+box="con">交流</A>             <A href="http://www.ruc.edu.cn/loadnoticelist?tid=5&amp;lid=1" 
+box="art">文体</A>         </DIV></DIV>
+<DIV class="infolist" id="newslist" style="display: block;">
+<DIV class="featured"><A href="http://news.ruc.edu.cn/archives/191220" target="_blank">中国人民大学本科教学工作审核评估专家意见反馈会举行<SPAN>(2017-12-14)</SPAN></A></DIV>
+<UL style="height: 96px;">
+  <LI><A title="刘伟校长出席人民网大学校长论坛并就人文社会科学重要作用发表演讲 (2017-12-17)" href="http://news.ruc.edu.cn/archives/191570" 
+  target="_blank">刘伟校长出席人民网大学校长论坛并就人文社会科学重要作用发表演讲<SPAN>(2017-12-17)</SPAN></A></LI>
+  <LI><A title="全员全方位全过程 推动新时代思政育人——中国人民大学思想政治工作纪实 (2017-12-10)" href="http://news.ruc.edu.cn/archives/190233" 
+  target="_blank">全员全方位全过程 
+  推动新时代思政育人——中国人民大学思想政治工作纪实<SPAN>(2017-12-10)</SPAN></A></LI>
+  <LI><A title="全国普通高校毕业生就业创业工作网络视频会议召开 刘伟校长在中国人民大学分会场讲话 (2017-12-08)" href="http://news.ruc.edu.cn/archives/189971" 
+  target="_blank">全国普通高校毕业生就业创业工作网络视频会议召开 
+  刘伟校长在中国人民大学分会场讲话<SPAN>(2017-12-08)</SPAN></A></LI>
+  <LI><A title="中国人民大学主办英文期刊《经济与政治研究》被ESCI收录 (2017-12-08)" href="http://news.ruc.edu.cn/archives/190831" 
+  target="_blank">中国人民大学主办英文期刊《经济与政治研究》被ESCI收录<SPAN>(2017-12-08)</SPAN></A></LI></UL><A 
+class="go2rucnews" href="http://news.ruc.edu.cn/" target="_blank">人大新闻网</A>     
+</DIV>
+<DIV class="infolist" id="ntc">
+<UL>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=1&amp;nid=76185">讣告(2017-12-22)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=1&amp;nid=76180">中国人民大学人文社科成果评价发布论坛 
+  （2018•北...(2017-12-22)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=1&amp;nid=76177">关于开展2018年寒假“人大使者家乡行”活动的通知...(2017-12-22)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=1&amp;nid=76162">中国人民大学校园自备井置换改造工程设计更正公告...(2017-12-20)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=1&amp;nid=76161">中国人民大学明德楼、图书馆、国学馆、校医院、博物馆、...(2017-12-20)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=1&amp;nid=76160">中国人民大学图书馆、国学馆空调系统维护保养项目中标公...(2017-12-20)</A></LI></UL><A 
+class="go2rucnews" 
+href="http://www.ruc.edu.cn/loadnoticelist?tid=1&amp;lid=1">更多信息</A>     </DIV>
+<DIV class="infolist" id="acd">
+<UL>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=3&amp;nid=76184">《宏观政策评价报告2018》发布会...(2017-12-22)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=3&amp;nid=76177">关于开展2018年寒假“人大使者家乡行”活动的通知...(2017-12-22)</A></LI>
+  <LI><A href="http://www.ruc.edu.cn/loadnotice?tid=3&amp;nid=76164">[创新经济论坛] 
+  原始型创新研究成果第一次发布会...(2017-12-20)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=3&amp;nid=76163">[组织经济学Seminar]腐败、官员治理与经济发展...(2017-12-20)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=3&amp;nid=76155">【求是学术讲座第74讲】陈汉宣教授：人事冗余政治——...(2017-12-19)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=3&amp;nid=76147">【会议邀请】《特朗普内阁财富与政治政策走向》发布会暨...(2017-12-18)</A></LI></UL><A 
+class="go2rucnews" 
+href="http://www.ruc.edu.cn/loadnoticelist?tid=3&amp;lid=1">更多信息</A>     </DIV>
+<DIV class="infolist" id="con">
+<UL>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=4&amp;nid=76177">关于开展2018年寒假“人大使者家乡行”活动的通知...(2017-12-22)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=4&amp;nid=76006">青年教师国情教育系列讲座之三------台湾问题的内...(2017-11-17)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=4&amp;nid=75967">青年教师国情教育系列讲座之二------大国外交与中...(2017-11-10)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=4&amp;nid=75898">青年教师国情教育系列讲座之一------中国金融改革...(2017-11-03)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=4&amp;nid=75897">关于举办2017年青年教师国情教育系列讲座的通知...(2017-11-03)</A></LI>
+  <LI><A href="http://www.ruc.edu.cn/loadnotice?tid=4&amp;nid=75818">关于开展“立德树人 
+  教书育人”高校师德师风建设专题网...(2017-10-20)</A></LI></UL><A class="go2rucnews" href="http://www.ruc.edu.cn/loadnoticelist?tid=4&amp;lid=1">更多信息</A> 
+    </DIV>
+<DIV class="infolist" id="art">
+<UL>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=5&amp;nid=76047">清史文化节系列活动介绍...(2017-11-25)</A></LI>
+  <LI><A href="http://www.ruc.edu.cn/loadnotice?tid=5&amp;nid=76040">党委宣传部 
+  党委学生工作部 校团委 关于“新青年唱响...(2017-11-24)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=5&amp;nid=75148">2017年中国人民大学“千人百村”社会调研活动学生招...(2017-06-01)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=5&amp;nid=73447">中国人民大学微电影《如此出行》荣获北京市“最佳剧情片...(2016-11-24)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=5&amp;nid=73339">2016年第11期（总第72期）吴玉章青年学术沙龙：...(2016-11-17)</A></LI>
+  <LI><A 
+  href="http://www.ruc.edu.cn/loadnotice?tid=5&amp;nid=73330">“益言益行”网络公益故事 
+  微视频征集展映活动...(2016-11-16)</A></LI></UL><A class="go2rucnews" href="http://www.ruc.edu.cn/loadnoticelist?tid=5&amp;lid=1">更多信息</A> 
+    </DIV></DIV></DIV>
+<DIV class="cc-short cc-short-peiyang">
+<DIV class="mbright-box">
+<DIV class="mbrbox-links"><A 
+href="http://www.ruc.edu.cn/undergraduateadmission">招生</A>                       
+                  <A href="http://www.ruc.edu.cn/teacherssummary">教学</A>         
+                                <A href="http://xsc.ruc.edu.cn/" 
+target="_blank">学工</A>                                         <A href="http://career.ruc.edu.cn/" 
+target="_blank">就业</A>                                         <A href="http://peixun.ruc.edu.cn/" 
+target="_blank">培训</A>                                                           
+                      </DIV>
+<DIV class="mbrbox-info" id="studentnewsfeed">
+<DIV class="mbrbox-info-left"><A href="http://news.ruc.edu.cn/archives/164843" 
+target="_blank"><IMG src="ruc_files/333.jpg"></A> </DIV>
+<DIV class="mbrbox-info-right"><A href="http://news.ruc.edu.cn/archives/164843" 
+target="_blank">中国人民大学新设3个本科专业 总数增至80个<SPAN>(2017-03-27)</SPAN></A> </DIV></DIV>
+<DIV class="mbrbox-more"><A href="http://ctd.ruc.edu.cn/" 
+target="_blank">教师教学发展中心</A></DIV></DIV></DIV>
+<DIV class="cc-short cc-short-yanjiu">
+<DIV class="mbright-box">
+<DIV class="mbrbox-links"><A href="http://keyan.ruc.edu.cn/Article/ShowClass.asp?ClassID=3" 
+target="_blank">动态</A>                                         <A href="http://keyan.ruc.edu.cn/Article/ShowClass.asp?ClassID=9" 
+target="_blank">学者</A>                                         <A href="http://keyan.ruc.edu.cn/Article/ShowClass.asp?ClassID=12" 
+target="_blank">机构</A>                                         <A href="http://keyan.ruc.edu.cn/Article/ShowClass.asp?ClassID=24" 
+target="_blank">期刊</A>                                         <A href="http://www.ruc.edu.cn/policylist">政策</A> 
+                                        </DIV>
+<DIV class="mbrbox-info" id="researchnewsfeed">
+<DIV class="mbrbox-info-left"><A href="http://news.ruc.edu.cn/archives/187864" 
+target="_blank"><IMG src="ruc_files/12.20.png"></A> </DIV>
+<DIV class="mbrbox-info-right"><A href="http://news.ruc.edu.cn/archives/187864" 
+target="_blank">中国人民大学获得15项国家社科基金重大项目 位居全国首位<SPAN>(2017-11-21)</SPAN></A> 
+</DIV></DIV></DIV></DIV>
+<DIV class="cc-short cc-short-jiaoliu">
+<DIV class="mbright-box">
+<DIV class="mbrbox-links"><A href="http://io.ruc.edu.cn/" target="_blank">国际</A> 
+                                        <A style="width: 40px;" href="http://io.ruc.edu.cn/" 
+target="_blank">港澳台</A>                                         <A href="http://io.ruc.edu.cn/" 
+target="_blank">国内</A>                                           <A style="width: 60px;" 
+href="http://io.ruc.edu.cn/" target="_blank">合作办学</A>                            
+             </DIV>
+<DIV class="mbrbox-info" id="exchangenews">
+<DIV class="mbrbox-info-left"><A href="http://news.ruc.edu.cn/archives/187788" 
+target="_blank"><IMG src="ruc_files/5588.jpg"></A> </DIV>
+<DIV class="mbrbox-info-right"><A href="http://news.ruc.edu.cn/archives/187788" 
+target="_blank">巴拿马总统巴雷拉到访中国人民大学 获名誉博士学位并发表演讲<SPAN>(2017-11-20)</SPAN></A> 
+</DIV></DIV>
+<DIV class="mbrbox-more"><A href="http://iss.ruc.edu.cn/" 
+target="_blank">International Summer School</A></DIV></DIV></DIV>
+<DIV class="cc-right">
+<DIV class="ccr-up"><A href="http://news.ruc.edu.cn/bkjxpg" target="_blank"><IMG 
+id="tipimg" src="ruc_files/bkjxpg.jpg"></A>                                      
+   </DIV></DIV></DIV></DIV>
+<DIV class="bottom">
+<DIV id="home-bottom">
+<DIV class="bc-line-1">
+<DIV class="bc-left-1">Copyright © 2005-2017	 RUC.EDU.CN<SPAN id="ipinfo" style="margin-left: 10px;"></SPAN></DIV>
+<DIV class="bc-right-1"><A href="http://www.ruc.edu.cn/en">International 
+Version</A><SPAN>|</SPAN>						 <!--<a href="/home1024">旧版</a><a href="/mobile">主页</a><span>|</span>-->
+						 <A href="http://www.ruc.edu.cn/privacy">隐私版权</A><SPAN>|</SPAN>						 <A 
+href="mailto:web@ruc.edu.cn">联系我们</A><SPAN>|</SPAN>						 <A href="http://www.ruc.edu.cn/sitemap">网站地图</A>
+					 </DIV></DIV>
+<DIV class="bc-line-2">
+<DIV class="bc-left-2">地址：北京市海淀区中关村大街59号 邮编：100872    京公网安备110402430004号    
+京ICP备05066828号-1 </DIV>
+<DIV class="bc-right-2">Site designed by <SPAN>MONO</SPAN>KEROS &amp; powered by 
+<A href="http://sae.sina.com.cn/" target="_blank">Sina App 
+Engine</A></DIV></DIV></DIV></DIV></DIV>
+<DIV id="slide-arrow-box"><A class="slide-arrow slide-arrow-prev" id="cclb-btn-prev"></A><A 
+class="slide-arrow slide-arrow-next" id="cclb-btn-next"></A></DIV>
+<SCRIPT type="text/javascript">
+function SetCookie(name,value)
+{
+    var Days = 30;
+    var exp  = new Date();  
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+SetCookie("screen", "wide");
+</SCRIPT>
+ </BODY></HTML>
